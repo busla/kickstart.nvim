@@ -14,8 +14,14 @@ return {
       bind_to_cwd = false,
       follow_current_file = { enabled = true },
       use_libuv_file_watcher = true,
+      filtered_items = {
+        hide_dotfiles = false,
+        hide_gitignored = true,
+        never_show = { 'node_modules' },
+      },
     },
     window = {
+      position = 'right',
       mappings = {
         ['<space>'] = 'none',
         ['Y'] = {
