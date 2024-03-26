@@ -15,11 +15,12 @@ return { -- Autoformat
     formatters_by_ft = {
       lua = { 'stylua' },
       -- Conform can also run multiple formatters sequentially
-      -- python = { "isort", "black" },
-      --
-      -- You can use a sub-list to tell conform to run *until* a formatter
-      -- is found.
-      -- javascript = { { "prettierd", "prettier" } },
+      python = { 'isort', 'black' },
+      javascript = { 'prettier' },
+      sh = { 'shfmt' },
+      terraform = { 'terraform_fmt' },
+      tf = { 'terraform_fmt' },
+      ['terraform-vars'] = { 'terraform_fmt' },
     },
   },
 }
